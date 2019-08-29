@@ -13,6 +13,8 @@ for Android & Chrome OS ([beta](https://play.google.com/apps/testing/com.github.
 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks.tv"><img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="48"></a>
 for Android TV ([beta](https://play.google.com/apps/testing/com.github.shadowsocks.tv))
 
+### 主要改动
+主要在原有基础上加入新的快捷方式——切换，能够在快捷方式里就进行配置切换，同时加入了通知的附加操作——停止、切换，方便使用
 
 ### PREREQUISITES
 

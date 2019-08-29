@@ -26,7 +26,6 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.os.Build
 import android.os.PowerManager
 import android.text.format.Formatter
 import androidx.core.app.NotificationCompat
@@ -36,6 +35,7 @@ import com.github.shadowsocks.Core
 import com.github.shadowsocks.aidl.IShadowsocksServiceCallback
 import com.github.shadowsocks.aidl.TrafficStats
 import com.github.shadowsocks.core.R
+import com.github.shadowsocks.database.ProfileManager
 import com.github.shadowsocks.utils.Action
 
 /**
@@ -88,7 +88,18 @@ class ServiceNotification(private val service: BaseService.Interface, profileNam
                 PendingIntent.getBroadcast(service, 0, Intent(Action.CLOSE), 0)).apply {
             setShowsUserInterface(false)
         }.build()
-        if (Build.VERSION.SDK_INT < 24) builder.addAction(closeAction) else builder.addInvisibleAction(closeAction)
+        builder.addAction(closeAction)
+
+        if (ProfileManager.getAllProfiles()?.size!! > 1) {
+            val switchAction = NotificationCompat.Action.Builder(
+                    R.drawable.ic_service_active,
+                    service.getString(R.string.quick_switch),
+                    PendingIntent.getActivity(service, 0, Intent(Action.SWITCH), 0)).apply {
+                setShowsUserInterface(false)
+            }.build()
+            builder.addAction(switchAction)
+        }
+
         updateCallback(service.getSystemService<PowerManager>()?.isInteractive != false)
         service.registerReceiver(this, IntentFilter().apply {
             addAction(Intent.ACTION_SCREEN_ON)

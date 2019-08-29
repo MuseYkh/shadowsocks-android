@@ -23,6 +23,7 @@
 
 <resources>
     <string name="quick_toggle">"Aç/Kapa"</string>
+    <string name="quick_switch">"şalter"</string>
     <string name="remote_dns">"Uzaktan DNS"</string>
     <string name="stat_summary">"Yüklendi: \t\t\t\t\t%3$s\t↑\t%1$s
 İndirildi: \t%4$s\t↓\t%2$s"</string>

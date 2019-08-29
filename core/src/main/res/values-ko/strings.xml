@@ -23,6 +23,7 @@
 
 <resources>
     <string name="quick_toggle">"켜기/끄기"</string>
+    <string name="quick_switch">"스위치"</string>
     <string name="remote_dns">"원격 DNS"</string>
     <string name="stat_summary">"송신: \t%3$s\t↑\t%1$s/s
 수신: \t%4$s\t↓\t%2$s/s"</string>

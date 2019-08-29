@@ -23,6 +23,7 @@
 
 <resources>
     <string name="quick_toggle">"تغيير"</string>
+    <string name="quick_switch">مفتاح كهربائي</string>
     <string name="remote_dns">"سيرفر ال DNS"</string>
     <string name="stat_summary">"ارسل: \t%3$s\t↑\t%1$s
 استقبل: \t%4$s\t↓\t%2$s"</string>

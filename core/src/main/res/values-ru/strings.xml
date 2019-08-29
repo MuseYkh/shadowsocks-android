@@ -23,6 +23,7 @@
 
 <resources>
     <string name="quick_toggle">"Подключение"</string>
+    <string name="quick_switch">"переключатель"</string>
     <string name="remote_dns">"Удалённый DNS"</string>
     <string name="stat_summary">"Отправлено: \t%3$s\t↑\t%1$s
 Получено: \t\t\t%4$s\t↓\t%2$s"</string>

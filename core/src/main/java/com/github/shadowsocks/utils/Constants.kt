@@ -78,6 +78,7 @@ object Key {
 object Action {
     const val SERVICE = "com.github.shadowsocks.SERVICE"
     const val CLOSE = "com.github.shadowsocks.CLOSE"
+    const val SWITCH = "com.github.shadowsocks.SWITCH"
     const val RELOAD = "com.github.shadowsocks.RELOAD"
 
     const val EXTRA_PROFILE_ID = "com.github.shadowsocks.EXTRA_PROFILE_ID"

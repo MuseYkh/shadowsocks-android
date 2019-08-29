@@ -8,6 +8,16 @@
                 android:targetPackage="com.github.shadowsocks"
                 android:targetClass="com.github.shadowsocks.QuickToggleShortcut" />
     </shortcut>
+    <shortcut
+        android:icon="@drawable/ic_qu_shadowsocks_launcher"
+        android:shortcutId="switch"
+        android:shortcutLongLabel="@string/quick_switch"
+        android:shortcutShortLabel="@string/quick_switch">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.github.shadowsocks.QuickSwitchActivity"
+            android:targetPackage="com.github.shadowsocks" />
+    </shortcut>
     <shortcut android:shortcutId="scan"
               android:icon="@drawable/ic_qu_camera_launcher"
               android:shortcutShortLabel="@string/add_profile_methods_scan_qr_code"

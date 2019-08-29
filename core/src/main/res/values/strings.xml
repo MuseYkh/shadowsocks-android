@@ -3,6 +3,7 @@
 
   <string name="app_name">Shadowsocks</string>
   <string name="quick_toggle">Toggle</string>
+  <string name="quick_switch">Switch</string>
   <string name="send_email">Send email</string>
 
   <!-- misc -->

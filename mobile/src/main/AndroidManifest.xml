@@ -75,6 +75,20 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".QuickSwitchActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/quick_switch"
+            android:launchMode="singleInstance"
+            android:process=":bg"
+            android:taskAffinity=""
+            android:theme="@style/PopupTheme.QuickSwitch">
+            <intent-filter>
+                <action android:name="com.github.shadowsocks.SWITCH" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
         <service android:name=".bg.TileService"
                  android:label="@string/quick_toggle"
                  android:process=":bg"

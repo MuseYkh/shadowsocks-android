@@ -23,6 +23,7 @@
 
 <resources>
     <string name="quick_toggle">"Alternar"</string>
+    <string name="quick_switch">"Cambiar"</string>
     <string name="remote_dns">"DNS Remoto"</string>
     <string name="stat_summary">"Enviado: \t\t\t\t\t%3$s\t↑\t%1$s
 Recibido: \t%4$s\t↓\t%2$s"</string>
